@@ -40,3 +40,13 @@ let massData: {
   target: number;
   split: string;
 }[];
+
+// Type Inference
+let course = "TypeScript";
+
+// course = 1234; //typescript gives error as course is initialized at the time of declaration.
+
+// Union types
+let subjects: string | number;
+subjects = "123";
+subjects = 10;
