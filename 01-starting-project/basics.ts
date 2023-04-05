@@ -87,7 +87,7 @@ function recursiveCall() {
 
 // Generics
 
-function insertAtBeginning<T>(array: T[], value: T) {
+function insertAtBeginning<T>(array: T[], value: T): T[] {
   const newArray = [value, ...array];
   return newArray;
 }
