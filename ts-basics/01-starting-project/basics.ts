@@ -96,3 +96,49 @@ const demoArray = [1, 2, 3];
 
 const updatedArray = insertAtBeginning(demoArray, -1);
 const stringArray = insertAtBeginning(["a", "b", "c"], "d");
+
+// Optional Properties
+function printCar(car: {
+  make: string;
+  build: number;
+  color?: string;
+  topSpeed?: string;
+}) {
+  console.log(car);
+}
+
+printCar({
+  make: "Ferarri",
+  build: 2026,
+  color: "Red",
+  topSpeed: "150mph",
+});
+
+printCar({
+  make: "Audi",
+  build: 2025,
+  color: "white",
+});
+
+const phones: {
+  [k: string]: {
+    country: string;
+    area: string;
+    number: string;
+  };
+} = {
+  fax: {
+    country: "IND",
+    area: "JH",
+    number: "9148669104",
+  },
+};
+phones.fax.area = "a";
+
+// Tuples
+const aCar = ["BMW", "Blue", 2028];
+const [carName, color, build] = aCar;
+
+let myCar: [number, string, string] = [2024, "Audi", "Q7"];
+
+// type checking
