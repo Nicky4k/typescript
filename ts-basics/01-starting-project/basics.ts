@@ -141,4 +141,6 @@ const [carName, color, build] = aCar;
 
 let myCar: [number, string, string] = [2024, "Audi", "Q7"];
 
+// typescript limitations: it wont show error when we push or pop a tuple.
+
 // type checking
